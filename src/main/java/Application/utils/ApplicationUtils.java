@@ -34,7 +34,10 @@ public class ApplicationUtils {
 		s2 = trimAndLowerCaseString(s2);
 
 		if (!stringLength(s1, s2)){
-			System.out.printf("Words \"%s\" and \"%s\" don't anagrams", s1, s2);
+			System.out.printf("Words \"%s\" and \"%s\" don't anagrams. Words different length.", s1, s2);
+			return false;
+		} else if (s1.equals(s2)){
+			System.out.printf("Words \"%s\" and \"%s\" don't anagrams. Words equals.", s1, s2);
 			return false;
 		}
 
