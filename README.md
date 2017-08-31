@@ -1,6 +1,6 @@
 # Anagrams
 
-##Run project:
+## Run project:
 
 1. mvn package
 2. cd target/
